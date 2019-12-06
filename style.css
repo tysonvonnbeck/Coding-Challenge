@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.jumbotron {
+    border:10px solid gold;
+    width: 800px;
+    margin: 0 auto
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+.card {
+    max-width: 688px;
+    max-height: fit-content;
+}
+
+.card-body {
+    box-shadow: 10px 10px 5px grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+} 
+
+.hideElem {
+    display: none;
+}
+
+#timer {
+    background-color: #fff;
+}
+
+
