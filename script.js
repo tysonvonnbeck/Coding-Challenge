@@ -4,6 +4,10 @@ var landingElem = document.getElementById("landing")
 var questionDispElem = document.getElementById("questionDisplay")
 var questionContent = document.getElementById('question')
 var currentQuestion = 0;
+var choices = questions[currentQuestion].choices
+// var answerButtonElem = 
+
+
 
 
 function timer()
@@ -28,27 +32,16 @@ startButtonElem.addEventListener("click", function() {
 
     questionContent.textContent = questions[currentQuestion].title
 
-    for (let i = 0; i < answersArray.length; i++) {
-        console.log(answersArray[i]);
-     }
-    
-    var btn = document.createElement(ul="BUTTON");
-    btn.innerHTML = questions[currentQuestion].choices;
-    // btn.innerHTML = questions[currentQuestion].choices;                  
-    // document.body.appendChild(btn); 
-    
-})
+     function makeBtns() {
+      for (let i = 0; i < choices.length; i++) {
+      var btn = document.createElement("button");
+      var pick = document.createTextNode(choices[i]);
+      btn.appendChild(pick);
+      document.getElementById("choices").appendChild(btn);
+    }}
 
+    makeBtns()
 
+  })
 
-
-//create list item li
-// input information answersArray[i] - (<ul id="answers">)
-// UL.appendChild
-
-// answer cklick functiom
-// updates score
-// moves to next question
-
-
-console.log(questions[currentQuestion].choices)
+// answerButtonElem.addEventListener("click", function(){}

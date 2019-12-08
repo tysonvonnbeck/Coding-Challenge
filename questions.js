@@ -1,7 +1,7 @@
 var questions = [
     {
       title: "In France, there is a place called ___________",
-      choices: ["Rome", "Y", "Mykonos", "Poupe"],
+      choices: ["Rome", "Y", "Xy", "Poupe"],
       answer: "Y"
     },
 
