@@ -11,3 +11,13 @@ Get the HIGH SCORE to win!
 
 BONUS: if you can plug your nose and hum at the same time, you also win.
 
+
+Features
+Questions are stored in an array, but buttons are created dynamically.
+
+Still to-do:
+High Scores scene
+local storage for high scores
+(endgame function) Finish game/timer expires =  calls final score/high score screen
+hide High Scores navigation button during active game
+
