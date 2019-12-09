@@ -1,7 +1,8 @@
 var quizTimer = 120;
-var wrong = 15
+var wrong = 15;
 var startButtonElem = document.getElementById("startButton");
 var landingElem = document.getElementById("landing");
+var highScoresElem = document.getElementById("highScoresDisplay") 
 var questionDispElem = document.getElementById("questionDisplay");
 var questionContent = document.getElementById("question");
 var currentQuestion = questions[0];
@@ -18,10 +19,9 @@ function timer() {
 }
 
 function wrongAnswer(num1, num2, operator) {
-  if (operator === '-') {
+  if (operator === "-") {
     return num1 - num2;
   }
-
 }
 
 startButtonElem.addEventListener("click", function() {
@@ -29,7 +29,9 @@ startButtonElem.addEventListener("click", function() {
   var counter = setInterval(timer, 1000);
   timer();
   landingElem.classList.add("hideElem");
+  highScoresElem.classList.add("hideElem");
   questionDispElem.classList.remove("hideElem");
+  
 
   questionContent.textContent = currentQuestion.title;
 
@@ -50,7 +52,7 @@ startButtonElem.addEventListener("click", function() {
       setTimeout(question2, 1000);
     } else {
       document.getElementById("result").textContent = "Wrong! -Try again-";
-      quizTimer = wrongAnswer(quizTimer, wrong, '-' )
+      quizTimer = wrongAnswer(quizTimer, wrong, "-");
     }
   });
 });
@@ -83,7 +85,14 @@ function question2() {
       setTimeout(NextQuestion, 1000);
     } else {
       document.getElementById("result").textContent = "Wrong! -Try again-";
-      quizTimer = wrongAnswer(quizTimer, wrong, '-' )
+      quizTimer = wrongAnswer(quizTimer, wrong, "-");
     }
   });
 }
+
+function viewHighScores() {
+    
+}
+
+
+
