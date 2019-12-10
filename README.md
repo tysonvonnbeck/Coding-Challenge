@@ -1,4 +1,4 @@
-# Coding-Challenge
+# Quiz-Challenge
 A timed quiz that stores high scores
 
 ## Welcome to the Trivia Quiz where you will be tested on your random trivia knowledge.
@@ -20,4 +20,5 @@ Questions are stored in an array, but buttons are created dynamically.
 + local storage for high scores
 + (endgame function) Finish game/timer expires =  calls final score/high score screen
 + hide High Scores navigation button during active game
++ fix method of calling next in array instead of copy/pasting reuable code...
 
