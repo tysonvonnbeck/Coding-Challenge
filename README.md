@@ -14,7 +14,6 @@ Get the HIGH SCORE to win!
 
 ##### BONUS: if you can plug your nose and hum at the same time, you also win.
 
-
 Features
 Questions are stored in an array, but buttons are created dynamically.
 

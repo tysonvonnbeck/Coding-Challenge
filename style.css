@@ -42,6 +42,7 @@ body {
 
 #timer {
     background-color: #fff;
+    border: 5px solid gold;
 }
 
 #choices {
@@ -49,3 +50,4 @@ body {
     flex-direction: column;
     max-width: fit-content;
 }
+
